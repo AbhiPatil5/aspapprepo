@@ -1,0 +1,9 @@
+
+
+docker build -t aspapphello:v1.0 -f aspapphello/Dockerfile .
+
+docker run -d -p 8080:80 aspapphello:v1.0
+
+docker login
+
+docker push abhijitdocker87/aspapphello:v1.0
