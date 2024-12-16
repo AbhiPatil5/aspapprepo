@@ -1,0 +1,28 @@
+
+--run form inside aspspringapp folder 
+--install spring boot and build with maven 
+mvn clean package
+
+--Buld the imge with docker build
+docker build -t aspspringapp:v2.0 -f Dockerfile .
+
+--tag the image 
+docker tag aspspringapp:v2.0 abhijitdocker87/aspspringapp:v2.0
+
+--run the container on local with that imagw 
+docker run -d -p 8080:8080 aspspringapp:v2.0
+
+--check localhost url and metrics url
+
+http://localhost:8080/
+http://localhost:8080/actuator/prometheus
+
+--push the image to repo
+--First docker login with docker hub credentails and then do docker push 
+
+docker login 
+
+docker push abhijitdocker87/aspspringapp:v2.0
+
+
+---

@@ -1,7 +1,7 @@
 
 docker login
 
-docker build -t aspapphello:v2.0 -f aspapphello/Dockerfile .
+docker build -t aspapphello:v2.0 -f Dockerfile .
 
 ---docker images 
 
