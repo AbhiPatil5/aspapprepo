@@ -7,6 +7,8 @@ docker build -t aspapphello:v2.0 -f aspapphello/Dockerfile .
 
 docker tag <imageid> abhijitdocker87/aspapphello:v2.0
 
+docker tag aspapphello:v2.0 abhijitdocker87/aspapphello:v2.0
+
 docker push abhijitdocker87/aspapphello:v2.0
 
 docker run -d -p 8080:80 aspapphello:v2.0
