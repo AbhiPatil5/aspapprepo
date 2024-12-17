@@ -1,4 +1,6 @@
 
+
+--run form inside aspapphello folder 
 docker login
 
 docker build -t aspapphello:v2.0 -f Dockerfile .
