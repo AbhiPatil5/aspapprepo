@@ -12,6 +12,7 @@ docker tag aspspringapp:v2.0 abhijitdocker87/aspspringapp:v2.0
 --run the container on local with that image 
 docker run -d -p 8080:8080 aspspringapp:v2.0
 
+docker ps 
 --check localhost url and metrics url
 
 http://localhost:8080/
